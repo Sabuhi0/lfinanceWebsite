@@ -1,0 +1,141 @@
+@import "./varibales.scss";
+.pricing-items {
+    display: flex;
+    gap: 31px;
+    .pricing-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 40px;
+        background: $Color-White;
+        border: 1px solid $Color-Alto;
+        box-sizing: border-box;
+        border-radius: 10px;
+        .pricing-content {
+            h1 {
+                text-align: center;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 32px;
+                /* identical to box height, or 133% */
+                letter-spacing: 0.1px;
+                /* text-color */
+                color: $Color-Ebony-Clay;
+            }
+            p {
+                width: 164px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 16px;
+                margin-top: 35px;
+                line-height: 24px;
+                /* or 150% */
+                letter-spacing: 0.1px;
+                /* second-text-color */
+                color: $Color-Dove-Gray;
+            }
+        }
+        .price {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 35px;
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 57px;
+                /* identical to box height, or 142% */
+                letter-spacing: 0.2px;
+                /* primary-color */
+                color: $Color-Picton-Blue;
+            }
+            p {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+                letter-spacing: 0.1px;
+                /* disabled-element-color */
+                color: $Color-Jordy-Blue;
+            }
+        }
+        .price-button {
+            padding-top: 35px;
+            button {
+                width: 246px;
+                padding: 15px 40px;
+                margin-bottom: 25px;
+                /* primary-color */
+                color: $Color-White;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 22px;
+                /* identical to box height, or 157% */
+                letter-spacing: 0.2px;
+                background: $Color-Picton-Blue;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+        .list-item:not(:first-child) {
+            margin-top: 15px;
+            .list {
+                display: flex;
+                align-items: center;
+                .check {
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 200px;
+                    margin-right: 10px;
+                }
+                .secondary {
+                    background: $Color-Jungle-Green;
+                }
+                .mute {
+                    background: #BDBDBD;
+                }
+                .list-text p {
+                    width: 207px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 24px;
+                    /* or 171% */
+                    letter-spacing: 0.2px;
+                    /* text-color */
+                    color: $Color-Ebony-Clay;
+                }
+            }
+        }
+    }
+}
+
+.position {
+    position: relative;
+    .circle-box {
+        position: absolute;
+        left: calc(50% - 90px/2 + 102px);
+        top: -3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+        background: $Color-Burnt-Sienna;
+        border-radius: 52px;
+        h1 {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height, or 133% */
+            letter-spacing: 0.1px;
+            /* light-text-color */
+            color: $Color-White;
+        }
+    }
+}

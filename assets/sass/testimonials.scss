@@ -1,0 +1,48 @@
+@import "./varibales.scss";
+@media only screen and (max-width: 800px) {
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+%testimonials-content {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.testimonials {
+    display: flex;
+    gap: 30px;
+}
+
+.testimonials-card {
+    background: $Color-White;
+    border: 1px solid $Color-Alto;
+    border-radius: 5px;
+    padding: 30px 35px;
+    .testimonials-content p {
+        @extend %testimonials-content;
+        letter-spacing: 0.2px;
+        color: $Color-Dove-Gray;
+        margin-top: 21.83px;
+    }
+    .testimonials-profile {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        .profile-inf {
+            margin-left: 15px;
+            h1 {
+                @extend %testimonials-content;
+                color: $Color-Picton-Blue;
+            }
+            span {
+                @extend %testimonials-content;
+                color: $Color-Ebony-Clay;
+            }
+        }
+    }
+}

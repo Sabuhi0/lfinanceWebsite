@@ -1,0 +1,72 @@
+@import "./varibales.scss";
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials {
+    margin-top: 25px;
+    gap: 22px;
+}
+
+.content {
+    h1 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height, or 133% */
+        letter-spacing: 0.1px;
+        /* text-color */
+        color: $Color-Ebony-Clay;
+    }
+    p {
+        width: 213px;
+        margin-top: 25px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+        letter-spacing: 0.2px;
+        /* second-text-color */
+        color: $Color-Dove-Gray;
+    }
+}
+
+.footer-card {
+    ul {
+        li:first-child {
+            margin-top: 20px;
+        }
+        li {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+            letter-spacing: 0.2px;
+            /* second-text-color */
+            color: $Color-Dove-Gray;
+        }
+    }
+}
+
+.footer_content {
+    background: #FAFAFA;
+    padding-top: 25px;
+    padding-bottom: 27px;
+    text-align: center;
+    margin-top: 105px;
+    h1 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+        letter-spacing: 0.2px;
+        /* second-text-color */
+        color: $Color-Dove-Gray;
+    }
+}

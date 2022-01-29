@@ -1,0 +1,42 @@
+@import "./varibales.scss";
+.container {
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: $font;
+}
+
+// Content
+.main-content {
+    margin-top: 160px;
+    // width: 691px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    text-align: center;
+    h1 {
+        width: 445px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+        color: $Color-Ebony-Clay;
+    }
+    p {
+        width: 410px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: $Color-Dove-Gray;
+        padding-top: 10px;
+        padding-bottom: 80px;
+    }
+}

@@ -1,0 +1,89 @@
+@import "./varibales.scss";
+.container-fluid {
+    max-width: 1436px;
+    margin: 0 auto;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+@media only screen and (min-width: 800px) {
+    .news-items {
+        display: flex;
+        gap: 21px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .news-items {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.news-item {
+    position: relative;
+    .news-img {
+        position: relative;
+        .post {
+            img {
+                width: 100%;
+            }
+        }
+        .filter {
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+    }
+    .news-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        margin-left: 20px;
+        h1 {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+            letter-spacing: 0.2px;
+            /* light-text-color */
+            color: #FFFFFF;
+        }
+        h3 {
+            width: 237px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            /* or 150% */
+            letter-spacing: 0.2px;
+            /* light-text-color */
+            color: #FFFFFF;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 36px;
+            background: $Color-Picton-Blue;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 37px;
+            a {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 22px;
+                /* identical to box height, or 157% */
+                text-align: center;
+                letter-spacing: 0.2px;
+                /* light-text-color */
+                color: $Color-White;
+            }
+        }
+    }
+}
