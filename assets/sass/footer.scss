@@ -1,4 +1,14 @@
 @import "./varibales.scss";
+@media only screen and (max-width: 800px) {
+    .footer-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-card {
+        width: 213px;
+        margin-top: 30px;
+    }
+}
 .d-flex {
     display: flex;
     align-items: center;

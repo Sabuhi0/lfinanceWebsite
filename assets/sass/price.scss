@@ -1,4 +1,10 @@
 @import "./varibales.scss";
+
+@media only screen and (max-width: 800px) {
+    .pricing-items {
+        flex-direction: column;
+    }
+}
 .pricing-items {
     display: flex;
     gap: 31px;

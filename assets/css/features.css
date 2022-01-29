@@ -1,20 +1,31 @@
 @media only screen and (min-width: 800px) {
   .row {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     grid-gap: 33.5px;
   }
   .row .card-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 30px 40px;
     border: 1px solid #E9E9E9;
     background: #FAFAFA;
     border: 1px solid #E9E9E9;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 5px;
-    transition: all ease 0.4s;
+    -webkit-transition: all ease .4s;
+    transition: all ease .4s;
   }
   .row .card-item .card-text p {
     font-style: normal;
@@ -29,28 +40,40 @@
     background: #23A6F0;
   }
   .row .card-item:hover .card-icon,
-.row .card-item:hover .card-text p {
+  .row .card-item:hover .card-text p {
     fill: #FFFFFF;
     color: #FFFFFF;
   }
 }
+
 @media only screen and (max-width: 800px) {
   .row {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
     grid-gap: 33.5px;
   }
   .row .card-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 30px 40px;
     border: 1px solid #E9E9E9;
     background: #FAFAFA;
     border: 1px solid #E9E9E9;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 5px;
-    transition: all ease 0.4s;
+    -webkit-transition: all ease .4s;
+    transition: all ease .4s;
   }
   .row .card-item .card-text p {
     font-style: normal;
@@ -65,7 +88,7 @@
     background: #23A6F0;
   }
   .row .card-item:hover .card-icon,
-.row .card-item:hover .card-text p {
+  .row .card-item:hover .card-text p {
     fill: #FFFFFF;
     color: #FFFFFF;
   }

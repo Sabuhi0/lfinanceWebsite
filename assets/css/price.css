@@ -1,18 +1,41 @@
+@media only screen and (max-width: 800px) {
+  .pricing-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .pricing-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 31px;
 }
+
 .pricing-items .pricing-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 50px 40px;
   background: #FFFFFF;
   border: 1px solid #DEDEDE;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 10px;
 }
+
 .pricing-items .pricing-card .pricing-content h1 {
   text-align: center;
   font-weight: bold;
@@ -23,6 +46,7 @@
   /* text-color */
   color: #252B42;
 }
+
 .pricing-items .pricing-card .pricing-content p {
   width: 164px;
   text-align: center;
@@ -35,13 +59,24 @@
   /* second-text-color */
   color: #737373;
 }
+
 .pricing-items .pricing-card .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 35px;
 }
+
 .pricing-items .pricing-card .price h1 {
   font-weight: bold;
   font-size: 40px;
@@ -51,6 +86,7 @@
   /* primary-color */
   color: #23A6F0;
 }
+
 .pricing-items .pricing-card .price p {
   font-weight: bold;
   font-size: 16px;
@@ -60,9 +96,11 @@
   /* disabled-element-color */
   color: #8EC2F2;
 }
+
 .pricing-items .pricing-card .price-button {
   padding-top: 35px;
 }
+
 .pricing-items .pricing-card .price-button button {
   width: 246px;
   padding: 15px 40px;
@@ -79,28 +117,44 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
 .pricing-items .pricing-card .list-item:not(:first-child) {
   margin-top: 15px;
 }
+
 .pricing-items .pricing-card .list-item:not(:first-child) .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .pricing-items .pricing-card .list-item:not(:first-child) .list .check {
   width: 32px;
   height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 200px;
   margin-right: 10px;
 }
+
 .pricing-items .pricing-card .list-item:not(:first-child) .list .secondary {
   background: #2DC071;
 }
+
 .pricing-items .pricing-card .list-item:not(:first-child) .list .mute {
   background: #BDBDBD;
 }
+
 .pricing-items .pricing-card .list-item:not(:first-child) .list .list-text p {
   width: 207px;
   font-weight: 600;
@@ -115,18 +169,26 @@
 .position {
   position: relative;
 }
+
 .position .circle-box {
   position: absolute;
   left: calc(50% - 90px/2 + 102px);
   top: -3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 90px;
   height: 90px;
   background: #E77C40;
   border-radius: 52px;
 }
+
 .position .circle-box h1 {
   font-weight: bold;
   font-size: 24px;

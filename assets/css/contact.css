@@ -1,7 +1,28 @@
+@media only screen and (max-width: 800px) {
+  .contact-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-content {
+    margin-bottom: 30px;
+  }
+  .contact-content h1, .contact-content p {
+    text-align: center;
+  }
+}
+
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 257px;
   background: #252B42;
   margin-top: 141px;
@@ -9,10 +30,17 @@
 }
 
 .contact-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .contact-items .contact-content h1 {
   font-weight: bold;
   font-size: 40px;
@@ -20,6 +48,7 @@
   letter-spacing: 0.2px;
   color: #FFFFFF;
 }
+
 .contact-items .contact-content p {
   width: 439px;
   font-weight: 500;
@@ -27,28 +56,40 @@
   line-height: 20px;
   color: #FFFFFF;
 }
+
 .contact-items .contact-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .contact-items .contact-input form .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .contact-items .contact-input form .search-form .search-field {
   width: 100%;
   border-right: 0;
   background: #F9F9F9;
   border: 1px solid #E6E6E6;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 5px 0px 0px 5px;
   padding-left: 20px;
   outline: none;
 }
+
 .contact-items .contact-input form .search-form button {
   padding: 10px 22.5px;
   background: #23A6F0;
   border: 1px solid #23A6F0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 0px 5px 5px 0px;
   font-weight: normal;
   font-size: 14px;
